@@ -49,10 +49,13 @@ INSERT INTO usuarios (nombre, peliculafav) VALUES ('Usuario1', 2),
 ('Usuario10', 2);
 
 INSERT INTO pendiente(usuario, pelicula) VALUES
-(1,1),
-(2,3);
+(1,3),
+(2,1);
 
-SELECT usuarios.nombre, peliculas.titulo AS pelicula_pendiente
-FROM usuarios
-JOIN pendiente ON usuarios.id = pendiente.usuario
-JOIN peliculas ON pendiente.pelicula = peliculas.id;
+
+
+-- SELECT usuarios.nombre, peliculas.titulo AS pelicula_pendiente
+-- FROM usuarios
+-- JOIN pendiente ON usuarios.id = pendiente.usuario
+-- JOIN peliculas ON pendiente.pelicula = peliculas.id;
+
